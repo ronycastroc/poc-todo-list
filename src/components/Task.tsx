@@ -40,7 +40,7 @@ const Wrapper: any = styled.div`
     width: 20px;
     height: 20px;
     margin-left: 20px;
-    background-color: #948e99;
+    background-color: #2e1437;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +50,7 @@ const Wrapper: any = styled.div`
   p {
     cursor: pointer;
     font-size: 1rem;
-    color: #2e1437;
+    color: #e7eed0;
     cursor: pointer;
   }
 `;

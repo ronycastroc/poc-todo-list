@@ -2,10 +2,8 @@ import { FormEvent, useCallback, useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import Task from "./Task";
 
-
 export default function MainPage() {
-  // @ts-ignore
-  const list = JSON.parse(localStorage.getItem("list") || []);   
+  const list = JSON.parse(localStorage.getItem("list") || "[]");   
   const inputRef = useRef<any>(null);  
   const [refresh, setRefresh] = useState<boolean>(true);
   const [todo, setTodo] = useState<any>(list);
@@ -83,6 +81,7 @@ const Form = styled.form`
     border-radius: 10px;
     font-size: 1rem;
     border: none;
+    box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.2);
   }
 
   input:focus {
@@ -102,14 +101,15 @@ const Form = styled.form`
     border-radius: 10px;
     border: none;
     font-size: 30px;
-    color: #2e1437;
-    background-color: #948e99;
+    color: #e7eed0;
+    background-color: #2e1437;
+    box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
   }
 `;
 
 const Title = styled.div`
-  background-color:#948e99;
+  background-color: #2e1437;
   margin: 20px auto;
   width: 300px;
   height: 80px;
@@ -121,7 +121,7 @@ const Title = styled.div`
 
   h1 {
     font-family: 'Lobster', cursive;
-    color: #2e1437;
+    color: #e7eed0;
     font-size: 3rem;
   }
 `;
