@@ -53,6 +53,7 @@ table {
 body {
 	background-color: #51425f;
 	font-family: 'Roboto', sans-serif;
+	padding: 0 20px;
 }
 `;
 
