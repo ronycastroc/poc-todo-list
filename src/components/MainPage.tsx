@@ -4,7 +4,8 @@ import Task from "./Task";
 
 
 export default function MainPage() {
-  const list = JSON.parse(localStorage.getItem("list") || "");   
+  // @ts-ignore
+  const list = JSON.parse(localStorage.getItem("list"));   
   const inputRef = useRef<any>(null);  
   const [refresh, setRefresh] = useState<boolean>(true);
   const [todo, setTodo] = useState<any>(list);
