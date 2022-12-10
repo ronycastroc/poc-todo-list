@@ -49,6 +49,13 @@ table {
 * {
 	box-sizing: border-box;
 }
+
+body {
+	background-color: #e7eed0;
+	font-family: 'Roboto', sans-serif;
+	padding-left: 30px;
+	padding-right: 30px;
+}
 `;
 
 export default GlobalStyle;

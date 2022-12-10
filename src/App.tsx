@@ -1,10 +1,11 @@
 import GlobalStyle from './assets/GlobalStyles';
+import MainPage from './components/MainPage';
 
 export default function App() {
   return (
     <>
       <GlobalStyle />
-      <h1>TESTE</h1>
+      <MainPage />
     </>    
   );
 }
