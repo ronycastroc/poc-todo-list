@@ -42,7 +42,7 @@ export default function MainPage() {
             required
              />
             
-          <button>+</button>
+          <button role="form">+</button>
         </Form>
 
         <Tasks>

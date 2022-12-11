@@ -13,10 +13,10 @@ export default function Task({ id, name, todo, setTodo, refresh, setRefresh }: a
 
   return (
     <Wrapper check={check}>      
-        <li onClick={() => setCheck(!check)}>{name}</li>
+        <li role="row" onClick={() => setCheck(!check)}>{name}</li>
         
-        <div>
-          <p onClick={deleteTask}>x</p>  
+        <div role="button" onClick={deleteTask}>
+          <p>x</p>  
         </div>          
     </Wrapper>
   );
@@ -32,7 +32,7 @@ const Wrapper: any = styled.div`
     color: #2e1437;
     font-size: 1.5rem;
     list-style: initial;
-    text-decoration: ${(props: any) => (props.check === true ? "line-through;" : "none")};
+    text-decoration: ${(props: any) => (props.check === true ? "line-through" : "none")};
     cursor: pointer;
   }
 
